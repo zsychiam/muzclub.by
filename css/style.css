@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-size;
+}
+
+@font-face {
+    font-family: PlayfairDisplayExtraBold;
+    src: url("../fonts/playfair_display_extra_bold.ttf");
+}
+
+@font-face {
+    font-family: BookAntiquaBold;
+    src: url("../fonts/book_antiqua_bold.ttf");
+}
+
+@font-face {
+    font-family: PrataRegular;
+    src: url("../fonts/prata_regular.ttf");
+}
+
+@font-face {
+    font-family: NotoSerifDisplaySemiCondensedItalic;
+    src: url("../fonts/noto_serif_display_semi_condensed_italic.ttf");
+}
+
+@font-face {
+    font-family: MerelMedium;
+    src: url("../fonts/merel_medium.ttf");
+}
+
+@font-face {
+    font-family: ProximaNovaLight;
+    src: url("../fonts/proxima_nova_light.ttf");
+}
+
+@font-face {
+    font-family: PhilosopherBoldItalic;
+    src: url("../fonts/philosopher_bold_italic.ttf");
+}
+
+html,body {
+    height: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    height: 45vw;
+}
+
+video {
+    width: 40vw;
+    height: 45vw;
+}
+
+h1 {
+    font-family: PlayfairDisplayExtraBold;
+}
+
+h2 {
+    font-family: BookAntiquaBold;
+}
+
+p {
+    font-family: PrataRegular;
+    font-size: 2vw;
+}
+
+.article_description {
+    font-family: NotoSerifDisplaySemiCondensedItalic;
+}
+
+header {
+    font-family: MerelMedium;
+    border-bottom: 0.5vw solid black;
+    font-size: 3vw;
+    display: flex;
+    height: 10vv;
+}
+
+.button {
+    font-family: PhilosopherBoldItalic;
+}
+
+body {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    border-left: 0.5vw solid black;
+}
+
+header>.icon>a>.logo {
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+}
+
+header>.icon>a>.logo:hover {
+    fill: var(--head_gray);
+    transition: fill 0.3s;
+}
+
+a:hover {
+    color: var(--head_gray);
+    transition: color 0.3s;
+}
+
+.search:hover {
+    color: var(--head_gray);
+    transition: color 0.3s;    
+}
+
+:root {
+    --head_gray: rgb(115, 115, 115) ;
+}
+
+.search {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    border-left: 0.5vw solid black;
+}
+
+footer {
+    border-top: 0.5vw solid black;
+    border-bottom: 0.5vw solid black;
+    background-color: black;
+    font-family: MerelMedium;
+    display: flex;
+}
+
+footer>.icon>a>svg {
+    fill: #fff;
+}
+
+.icon {
+    height: 4vw;
+    width: 4vw;
+    padding: 0.8vh;  
+}
+
+.smallicon {
+    height: 3vw;
+    width: 3vw;
+    padding: 0.8vh; 
+}
+
+footer>.list>.link>a>.smallicon {
+    fill: #fff;
+}
+
+.footer_description>p {
+    color: #8d8d8d;
+    font-size: 0.9vw;
+    font-family: ProximaNovaLight;
+}
+
+.link {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer>.list>.link>a>span {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer>.list>.link>a {
+    color: #fff;
+    font-size: 1.4vw;
+}
+
+div.footer_description {
+    width: 18vw ;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+

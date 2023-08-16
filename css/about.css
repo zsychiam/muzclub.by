@@ -1,0 +1,106 @@
+.slide {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    display: flex;
+    overflow: hidden;
+}
+
+._first {
+    background-color: #ffffff;
+}
+
+._second {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+._firstslide {
+    padding-top: 1vw; 
+}
+
+._gray {
+    background-color: #21272d ;
+}
+
+._white {
+    background-color: #ffffff;
+}
+
+._rotate {
+    transform: rotate(30deg);
+    height: 50vw;
+}
+
+h2.headslide {
+    font-family: PlayfairDisplayExtraBold;
+    font-size: 6vw;
+}
+
+.slideimg>svg {
+    height: 35vw;
+    width: 35vw;
+}
+
+.slideimg {
+    padding-left: 5vw;
+    padding-right: 10vw;
+    width: 40vw;
+}
+
+._parallax {
+    height: 35vw;
+    object-fit: cover;
+    transition: all 0.1s ease 0s;
+}
+
+.slidetext {
+    opacity: 0;
+    transition: all 0.5s ease;
+    margin-bottom: 3vw;
+    width: 50vw;
+    position: relative;
+}
+
+._first>.slidetext {
+    padding-right: 3vw;
+    padding-left: 5vw;
+}
+
+._second>.slidetext {
+    padding-left: 5vw;
+}
+
+._invicible {
+    opacity: 0;
+}
+
+._visible {
+    opacity: 1;
+}
+
+.slidetext._visible>div {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.slidetext._visible>._active {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+._active {
+    opacity: 1;
+    transition: all 0.5s ease; 
+}
+
+.slideimg._logo {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+    padding-top: 5vw;
+}
+
+.slideimg._logo._active {
+    opacity: 1;
+    transform: translateX(0);
+}
